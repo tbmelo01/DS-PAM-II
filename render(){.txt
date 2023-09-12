@@ -1,0 +1,24 @@
+render(){
+        return(
+            <View>
+                <View style={StyleSheet.texto}>
+                    <Text>{this.state.contador}</Text>
+                </View>
+
+                <View style={Styles.botoes}>
+                    <Button
+                        style={styles.botao1}
+                        title="Aumenta"
+                        onPress={this.Incrementar.bind(this)}
+                    />
+                    
+                    <Button
+                        style={styles.botao2}
+                        onPress={this.Incrementar.bind(this)}
+                        title="Diminui"
+                    />
+
+                </View>
+            </View>
+        )
+    }
